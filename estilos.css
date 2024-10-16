@@ -1,195 +1,151 @@
-/* styles.css */
 
-/* Estilos generales */
+  /* Variables */
+$color-primario: #333333;
+$color-secundario: #FFFFFF;
 
+/* Estilos globales */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Montserrat, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
-  }
-  
-  /* Estilos para el header */
-  
-  .header {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .header a {
-    color: #FFFFFF;
-    text-decoration: none;
-  }
-  
-  .header a:hover {
-    color: #AAAAAA;
-  }
-  
-  /* Estilos para la imagen de fondo */
-  
-  .bg-image {
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-    width: 100vw;
-  }
-  
-  .bg-image::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Estilos para la sección introductoria */
-  
-  #intro {
-    color: #FFFFFF;
-    font-family: Montserrat;
-    padding-top: 10rem;
-    text-align: center;
-  }
-  
-  #intro h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  #intro p {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-  
-  /* Estilos para la sección de servicios */
-  
-  .services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 40px;
-  }
-  
-  .service-card {
-    background-color: #333333;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    width: calc(33.33% - 20px);
-  }
-  
-  .service-card h2 {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .services-container .service-card img {
-    height: 100px;
-    margin-bottom: 10px;
-  }
-  
-  /* Estilos para la sección de proyectos */
-  
-  #proyectos {
-    padding-top: 40px;
-  }
-  
-  .proyectos-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .proyectos-item {
-    background-color: #333333;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
-    width: calc(33.33% - 20px);
-  }
-  
-  .proyectos-item h3 {
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .proyectos-list li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  /* Estilos para el contacto */
-  
-  .contact-form {
-    padding-top: 40px;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"] {
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form textarea {
-    width: 100%;
-    height: 80px;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-form button[type="submit"] {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para el pie de página */
-  
-  .footer {
-    background-color: #333333;
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .footer p {
-    margin-bottom: 20px;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bg-image {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-secundario;
+}
+
+/* Estilos para la sección de cabecera */
+.header {
+  position: relative;
+  background-color: $color-primario;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu a {
+  color: $color-secundario;
+  text-decoration: none;
+}
+
+/* Estilos para la sección de contenido */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+#servicios {
+  background-color: $color-primario;
+  color: $color-secundario;
+  padding: 20px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.service-card {
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 20px);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#proyectos {
+  background-color: $color-primario;
+  color: $color-secundario;
+  padding: 20px;
+}
+
+.proyectos-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.proyectos-list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#contacto {
+  background-color: $color-primario;
+  color: $color-secundario;
+  padding: 20px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario label {
+  margin-bottom: 10px;
+}
+
+.formulario input[type="text"], .formulario textarea {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario button[type="submit"] {
+  background-color: $color-primario;
+  color: $color-secundario;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.formulario button[type="submit"]:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para la sección de pie de página */
+.footer {
+  background-color: $color-primario;
+  color: $color-secundario;
+  padding: 20px;
+  text-align: center;
+}

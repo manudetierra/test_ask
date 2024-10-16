@@ -1,79 +1,69 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estudio de Subsuelo</title>
-  <link rel="stylesheet" href="estilos.css">
+  <title>Página de inicio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="body">
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav">
-      <ul>
-        <li><a href="#intro">Bienvenido</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+<body>
+  <!-- Sección de cabecera -->
+  <header class="bg-image">
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Imagen de fondo -->
-  <div class="bg-image" style="background-image: url('imagen-fondo.jpg');"></div>
-
-  <!-- Sección introductoria -->
-  <section id="intro">
-    <h1>Bienvenido al Estudio de Subsuelo</h1>
-    <p>Ofrecemos servicios de estudio de subsuelo para la industria petrolera y gasífera.</p>
-  </section>
-
-  <!-- Sección de servicios -->
-  <section id="servicios">
-    <div class="services-container">
-      <div class="service-card">
-        <h2>Service 1</h2>
-        <p>Descripción del servicio 1</p>
+  <!-- Sección de contenido -->
+  <main class="content">
+    <section id="servicios" class="bg-image">
+      <h1>Servicios</h1>
+      <div class="services-container">
+        <article class="service-card">
+          <img src="imagen1.jpg" alt="Imagen del servicio 1">
+          <h2>Descripción del servicio 1</h2>
+        </article>
+        <article class="service-card">
+          <img src="imagen2.jpg" alt="Imagen del servicio 2">
+          <h2>Descripción del servicio 2</h2>
+        </article>
+        <article class="service-card">
+          <img src="imagen3.jpg" alt="Imagen del servicio 3">
+          <h2>Descripción del servicio 3</h2>
+        </article>
       </div>
-      <div class="service-card">
-        <h2>Service 2</h2>
-        <p>Descripción del servicio 2</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Sección de proyectos -->
-  <section id="proyectos">
-    <h1>Proyectos realizados</h1>
-    <ul class="projects-list">
-      <li>
-        <img src="imagen-proyecto.jpg" alt="Imagen del proyecto">
-        <p>Título del proyecto 1</p>
-      </li>
-      <li>
-        <img src="imagen-proyecto2.jpg" alt="Imagen del proyecto 2">
-        <p>Título del proyecto 2</p>
-      </li>
-    </ul>
-  </section>
+    <section id="proyectos">
+      <h1>Proyectos</h1>
+      <ul class="proyectos-list">
+        <li><a href="#">Proyecto 1</a></li>
+        <li><a href="#">Proyecto 2</a></li>
+        <li><a href="#">Proyecto 3</a></li>
+      </ul>
+    </section>
 
-  <!-- Contacto -->
-  <section id="contacto">
-    <h1>Contáctanos</h1>
-    <form class="contact-form">
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo electrónico">
-      <textarea placeholder="Mensaje"></textarea>
-      <button>Enviar</button>
-    </form>
-  </section>
+    <section id="contacto" class="bg-image">
+      <h1>Contacto</h1>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+        <textarea id="mensaje" name="mensaje"></textarea><br><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2023 Estudio de Subsuelo. Todos los derechos reservados.</p>
+  <!-- Sección de pie de página -->
+  <footer class="bg-image">
+    <p>&copy; 2023 Página de inicio. Todos los derechos reservados.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
